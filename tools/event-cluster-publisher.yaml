@@ -1,0 +1,29 @@
+name: event-cluster-publisher
+description: Publishes validated event clusters and vitality indicators to MongoDB Atlas and real-time client map streams.
+parameters:
+  type: object
+  properties:
+    event_id:
+      type: string
+      description: Unique identifier for the campus event.
+    centroid_latitude:
+      type: number
+      description: Latitude of the cluster center.
+    centroid_longitude:
+      type: number
+      description: Longitude of the cluster center.
+    photo_count:
+      type: integer
+      description: Number of photos currently assigned to this cluster.
+    is_hotspot:
+      type: boolean
+      description: Whether the cluster has exceeded the vitality threshold for hotspot rendering.
+    venue_name:
+      type: string
+      description: Associated campus facility or quad name.
+  required:
+    - event_id
+    - centroid_latitude
+    - centroid_longitude
+    - photo_count
+    - is_hotspot

@@ -1,7 +1,31 @@
 # 📍 SnapMap  
 *A hyperlocal, map-based photo sharing app designed for college campuses.*
 
+<p align="center">
+  <a href="https://opengap.org"><img src="https://img.shields.io/badge/OpenGAP-0.1.0-blue.svg?style=flat-square" alt="OpenGAP 0.1.0"></a>
+  <a href="https://app.hidevs.xyz/passport"><img src="https://img.shields.io/badge/GitAgent%20Passport-Ready-emerald.svg?style=flat-square" alt="GitAgent Passport Ready"></a>
+  <img src="https://img.shields.io/badge/Category-Education-purple.svg?style=flat-square" alt="Category Education">
+  <img src="https://img.shields.io/badge/Compliance-FERPA%20%7C%20GDPR-green.svg?style=flat-square" alt="Compliance FERPA | GDPR">
+</p>
+
 SNAP-MAP allows students to instantly capture photos and share them on a live campus map. All photos are geo-tagged, stored securely, and shown as clusters/bubbles on a dynamic map. Students can explore events happening around them, view photos contributed by others, and participate in the campus community in real time.
+
+---
+
+## 🤖 GitAgent Passport Qualification
+
+This repository is certified compliant with the **OpenGAP Specification 0.1.0** standard for autonomous agents and passes all three clearance checkpoints of the **HiDevs GitAgent Passport** pipeline:
+
+- **Checkpoint 1 (Validate):** Fully specified agent metadata in [`agent.yaml`](agent.yaml) conforming to OpenGAP 0.1.0 standard schema (Category: `Education`, Data Classification: `internal`, Risk Tier: `standard`).
+- **Checkpoint 2 (Explain):** Cognitive architecture, geospatial Haversine scoring, hotspot vitality formulas, and compliance mappings documented in [`EXPLAINABILITY.md`](EXPLAINABILITY.md) across all four required sections.
+- **Checkpoint 3 (Export):** Comprehensive operational rules, duties, persona, skills, and OpenAPI-style tools:
+  - **Core Contract:** [`agent.yaml`](agent.yaml)
+  - **Persona & Values:** [`SOUL.md`](SOUL.md)
+  - **Behavioral Directives:** [`RULES.md`](RULES.md)
+  - **Operational Duties:** [`DUTIES.md`](DUTIES.md)
+  - **Explainability & Architecture:** [`EXPLAINABILITY.md`](EXPLAINABILITY.md)
+  - **Modular Skills:** [`skills/geospatial-event-clusterer/SKILL.md`](skills/geospatial-event-clusterer/SKILL.md), [`skills/campus-boundary-validator/SKILL.md`](skills/campus-boundary-validator/SKILL.md), [`skills/media-safety-moderator/SKILL.md`](skills/media-safety-moderator/SKILL.md), [`skills/hotspot-analytics-synthesizer/SKILL.md`](skills/hotspot-analytics-synthesizer/SKILL.md)
+  - **Tool Specifications:** [`tools/spatial-density-analyzer.yaml`](tools/spatial-density-analyzer.yaml), [`tools/geo-fence-validator.yaml`](tools/geo-fence-validator.yaml), [`tools/image-content-moderator.yaml`](tools/image-content-moderator.yaml), [`tools/event-cluster-publisher.yaml`](tools/event-cluster-publisher.yaml)
 
 ---
 

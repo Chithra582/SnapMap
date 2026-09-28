@@ -1,0 +1,31 @@
+name: spatial-density-analyzer
+description: Computes pairwise Haversine distances and groups coordinate sets into density clusters using spatial thresholds.
+parameters:
+  type: object
+  properties:
+    coordinates:
+      type: array
+      items:
+        type: object
+        properties:
+          latitude:
+            type: number
+          longitude:
+            type: number
+          photo_id:
+            type: string
+        required:
+          - latitude
+          - longitude
+          - photo_id
+      description: Batch of coordinate pairs to evaluate.
+    epsilon_meters:
+      type: number
+      default: 50
+      description: Proximity distance threshold in meters for grouping.
+    min_points:
+      type: integer
+      default: 2
+      description: Minimum uploads required to form a cluster.
+  required:
+    - coordinates

@@ -1,0 +1,18 @@
+name: image-content-moderator
+description: Screens image content for safety policy compliance and flags inadvertent student PII for redaction.
+parameters:
+  type: object
+  properties:
+    image_url:
+      type: string
+      description: URL or storage path of the image to evaluate.
+    detect_pii:
+      type: boolean
+      default: true
+      description: Check for student ID badges, license plates, and sensitive documents.
+    confidence_threshold:
+      type: number
+      default: 0.85
+      description: Minimum confidence threshold to trigger moderation quarantine.
+  required:
+    - image_url

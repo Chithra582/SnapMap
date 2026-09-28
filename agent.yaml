@@ -1,0 +1,66 @@
+spec_version: "0.1.0"
+name: "snapmap-agent"
+version: "1.0.0"
+description: >
+  Autonomous hyperlocal campus photo-sharing, geospatial event clustering, spatial density
+  hotspot detection, and privacy-preserving media moderation agent for SnapMap. Coordinates
+  real-time GPS coordinate validation, Azure Blob secure ingestion, dynamic map bubble clustering,
+  and campus community safety.
+author: "Chithra R"
+license: "MIT"
+
+model:
+  preferred: "gemini-2.0-flash"
+  fallback:
+    - "gpt-4o"
+    - "claude-3-5-sonnet"
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+
+skills:
+  - geospatial-event-clusterer
+  - campus-boundary-validator
+  - media-safety-moderator
+  - hotspot-analytics-synthesizer
+
+tools:
+  - spatial-density-analyzer
+  - geo-fence-validator
+  - image-content-moderator
+  - event-cluster-publisher
+
+runtime:
+  max_turns: 10
+  temperature: 0.2
+  timeout: 120
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - ferpa
+    - gdpr
+  data_governance:
+    pii_handling: redact
+    data_classification: internal
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - campus-social
+  - geospatial
+  - photo-sharing
+  - event-clustering
+  - maps
+  - education
+  - student-life
+  - azure-storage
+
+metadata:
+  domain: "campus-geospatial-social"
+  category: "Education"

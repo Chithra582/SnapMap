@@ -1,0 +1,21 @@
+name: geo-fence-validator
+description: Validates GPS coordinates against registered campus boundary polygons and classifies facility zones.
+parameters:
+  type: object
+  properties:
+    latitude:
+      type: number
+      description: Latitude coordinate of the capture location.
+    longitude:
+      type: number
+      description: Longitude coordinate of the capture location.
+    campus_polygon_id:
+      type: string
+      description: Identifier for the university campus GeoJSON boundary.
+    check_restricted_zones:
+      type: boolean
+      default: true
+      description: Whether to check for sensitive zones such as dormitories.
+  required:
+    - latitude
+    - longitude
